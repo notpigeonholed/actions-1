@@ -13,7 +13,7 @@ jobs:
               run: sudo apt-get install cowsay -y
 
             - name: Execute the cowsay command
-              run: cowsay -f dragon "I'm Smaug and I was voiced by Benedict Cumberbatch, none other than Sherlock Strange himself" >> dragon.txt
+              run: cowsay -f dragon "I'm Smaug, the Dragon of the Lonely mountain and I was voiced by Benedict Cumberbatch, none other than Sherlock Strange himself" >> dragon.txt
 
             - name: Test if the file exists
               run: grep -i "dragon" dragon.txt
