@@ -5,5 +5,3 @@ cowsay -f dragon "I'm Smaug, the Dragon of the Lonely mountain and I was voiced 
 grep -i "dragon" dragon.txt
 
 cat dragon.txt
-
-ls -lrta
