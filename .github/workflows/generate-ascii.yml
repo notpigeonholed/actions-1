@@ -9,17 +9,7 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v4
             
-            - name: Install cowsay program
-              run: sudo apt-get install cowsay -y
-
-            - name: Execute the cowsay command
-              run: cowsay -f dragon "I'm Smaug, the Dragon of the Lonely mountain and I was voiced by Benedict Cumberbatch, none other than Sherlock Strange himself" >> dragon.txt
-
-            - name: Test if the file exists
-              run: grep -i "dragon" dragon.txt
-
-            - name: Read the file
-              run: cat dragon.txt
-
-            - name: List the files
-              run: ls -lrta
+            - name: Execute cowsay program
+              run: |
+                chmod +x
+                ./ascii-script.sh
